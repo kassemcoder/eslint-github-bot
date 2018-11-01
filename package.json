@@ -1,50 +1,50 @@
 {
-  "name": "eslint-github-bot",
-  "version": "0.1.0",
-  "description": "Plugin based Github bot for ESLint",
-  "main": "./src/app.js",
-  "scripts": {
-    "lint": "eslint src tests .eslintrc.js",
-    "lint:fix": "npm run lint -- --fix",
-    "start": "node ./src/app.js",
-    "test": "npm run lint && jest --colors --verbose",
-    "test:cover": "jest --colors --coverage"
+  &quot;name&quot;: &quot;eslint-github-bot&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;description&quot;: &quot;Plugin based Github bot for ESLint&quot;,
+  &quot;main&quot;: &quot;./src/app.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;lint&quot;: &quot;eslint src tests .eslintrc.js&quot;,
+    &quot;lint:fix&quot;: &quot;npm run lint -- --fix&quot;,
+    &quot;start&quot;: &quot;node ./src/app.js&quot;,
+    &quot;test&quot;: &quot;npm run lint &amp;&amp; jest --colors --verbose&quot;,
+    &quot;test:cover&quot;: &quot;jest --colors --coverage&quot;
   },
-  "author": "Gyandeep Singh <gyandeeps@gmail.com>",
-  "license": "MIT",
-  "repository": "eslint/eslint-github-bot",
-  "bugs": "https://github.com/eslint/eslint-github-bot/issues/",
-  "dependencies": {
-    "moment": "^2.21.0",
-    "moment-timezone": "^0.5.14",
-    "probot": "^7.1.2",
-    "probot-scheduler": "^1.0.3"
+  &quot;author&quot;: &quot;Gyandeep Singh &lt;gyandeeps@gmail.com&gt;&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;repository&quot;: &quot;eslint/eslint-github-bot&quot;,
+  &quot;bugs&quot;: &quot;https://github.com/eslint/eslint-github-bot/issues/&quot;,
+  &quot;dependencies&quot;: {
+    &quot;moment&quot;: &quot;^2.21.0&quot;,
+    &quot;moment-timezone&quot;: &quot;^0.5.14&quot;,
+    &quot;probot&quot;: &quot;^7.1.2&quot;,
+    &quot;probot-scheduler&quot;: &quot;^1.0.3&quot;
   },
-  "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-eslint": "^4.0.0",
-    "jest": "^22.4.2",
-    "nock": "^9.2.3"
+  &quot;devDependencies&quot;: {
+    &quot;eslint&quot;: &quot;^4.18.2&quot;,
+    &quot;eslint-config-eslint&quot;: &quot;^4.0.0&quot;,
+    &quot;jest&quot;: &quot;^22.4.2&quot;,
+    &quot;nock&quot;: &quot;^9.2.3&quot;
   },
-  "keywords": [
-    "bot",
-    "github",
-    "events",
-    "eslint"
+  &quot;keywords&quot;: [
+    &quot;bot&quot;,
+    &quot;github&quot;,
+    &quot;events&quot;,
+    &quot;eslint&quot;
   ],
-  "jest": {
-    "testMatch": [
-      "<rootDir>/tests/**/*.js"
+  &quot;jest&quot;: {
+    &quot;testMatch&quot;: [
+      &quot;&lt;rootDir&gt;/tests/**/*.js&quot;
     ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/tests/.eslintrc.js",
-      "<rootDir>/tests/__mocks__"
+    &quot;testPathIgnorePatterns&quot;: [
+      &quot;&lt;rootDir&gt;/tests/.eslintrc.js&quot;,
+      &quot;&lt;rootDir&gt;/tests/__mocks__&quot;
     ],
-    "coverageDirectory": "./coverage",
-    "collectCoverage": false,
-    "testEnvironment": "node"
+    &quot;coverageDirectory&quot;: &quot;./coverage&quot;,
+    &quot;collectCoverage&quot;: false,
+    &quot;testEnvironment&quot;: &quot;node&quot;
   },
-  "engines": {
-    "node": ">=7.7"
+  &quot;engines&quot;: {
+    &quot;node&quot;: &quot;&gt;=7.7&quot;
   }
 }
