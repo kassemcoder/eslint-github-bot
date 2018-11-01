@@ -1,11 +1,11 @@
-"use strict";
+&quot;use strict&quot;;
 
 module.exports = {
     parserOptions: {
         ecmaVersion: 8
     },
     extends: [
-        "eslint"
+        &quot;eslint&quot;
     ],
     env: {
         node: true,
