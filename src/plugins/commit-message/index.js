@@ -8,7 +8,7 @@
 
 const { getCommitMessageForPR } = require("../utils");
 
-const TAG_REGEX = /^((?:Breaking|Build|Chore|Docs|Fix|New|Update|Upgrade):)/;
+const TAG_REGEX = /^((?:Breaking|Build|Chore|Docs|Fix|New|Update|Upgrade):|Revert )/;
 
 const POTENTIAL_ISSUE_REF_REGEX = /#\d+/;
 
@@ -30,10 +30,6 @@ const EXCLUDED_REPOSITORY_NAMES = new Set([
  */
 function checkCommitMessage(message) {
     const commitTitle = message.split(/\r?\n/)[0];
-
-    if (message.startsWith("Revert \"")) {
-        return true;
-    }
 
     // First, check tag and summary length
     let isValid = TAG_REGEX.test(commitTitle) && commitTitle.length <= MESSAGE_LENGTH_LIMIT;
